@@ -12,3 +12,9 @@ https://www.youtube.com/watch?v=4mKY_yDq64g&t=156s
 
 material.angular.io
 5. $ ng add @angular/material
+
+https://material.angular.io/components/categories
+6. Components -> Examples: Add API, HTML, CSS
+- API into app.module.ts
+- HTML in component.html 
+- Add CSS
