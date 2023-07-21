@@ -19,4 +19,7 @@ https://material.angular.io/components/categories
 - HTML in component.html 
 - Add CSS
 
-Tutorial: 10:38
+7. Generate component
+$ ng g c add-edit-employee 
+
+Tutorial: 16:00
