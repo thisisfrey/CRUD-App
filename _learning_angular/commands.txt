@@ -18,3 +18,5 @@ https://material.angular.io/components/categories
 - API into app.module.ts
 - HTML in component.html 
 - Add CSS
+
+Tutorial: 10:38
