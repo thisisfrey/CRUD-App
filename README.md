@@ -5,16 +5,7 @@ This is a CRUD (Create, Read, Update, Delete) application built with Angular, Ma
 ## Table of Contents
 - [Overview](#overview)
 - [Angular](#angular)
-    - [Step 1: Install Angular CLI](step-1-install-angular-cli)
-    - [Step 2: Check Angular version]()
-    - [Step 3: Create a new Angular app]()
-    - [Step 4: Start the app]()
-    - [Step 5: Code scaffolding]()
-    - [Step 6: Testing]()
 - [JSON Server](#json-server)
-    - [Step 1: Installation]()
-    - [Step 2: Getting started]()
-    - [Step 3: RESTful endpoints]()
 - [Contribution](#contribution)
 
 ## Overview
