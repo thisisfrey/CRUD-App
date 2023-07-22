@@ -6,7 +6,7 @@ This is a CRUD (Create, Read, Update, Delete) application built with Angular, Ma
 - [Overview](#overview)
 - [Angular](#angular)
 - [JSON Server](#json-server)
-- [Contribution](#contribution)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
