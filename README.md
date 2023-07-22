@@ -65,6 +65,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 ng g c component-name 
 ```
 
+To generate a service run the following command:
+```bash
+ng g s services/service-name
+```
+
 ### Step 6: Testing
 #### Running unit tests
 
@@ -79,6 +84,30 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+
+## JSON Server
+
+### Step 1: Installation
+To install JSON Server globally, open your terminal or command prompt and run the following command:
+```bash
+npm install -g json-server
+```
+
+### Step 2: Getting started
+Start JSON Server by running the following command in your terminal:
+```bash
+json-server --watch db.json
+```
+This creates the [db.json](https://github.com/thisisfrey/CRUD-App/blob/main/db.json) file in the root directory with default data, if it doesn't exist. JSON Server will now be running at http://localhost:3000/. You can access your data through various RESTful endpoints.
+
+### Step 3: Usage: RESTful endpoints
+JSON Server automatically creates RESTful endpoints based on the data in your db.json file. For example:
+
+- GET http://localhost:3000/employees will retrieve all posts.
+- GET http://localhost:3000/employees/1 will retrieve the post with ID 1.
+- POST http://localhost:3000/employees with a JSON body will create a new post.
+- PUT http://localhost:3000/employees/1 with a JSON body will update the post with ID 1.
+- DELETE http://localhost:3000/employees/1 will delete the post with ID 1.
 
 
 

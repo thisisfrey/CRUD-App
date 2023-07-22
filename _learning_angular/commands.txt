@@ -22,4 +22,17 @@ https://material.angular.io/components/categories
 7. Generate component
 $ ng g c add-edit-employee 
 
-Tutorial: 28:50
+
+JSON Server (starting at 35)
+
+8. Generate service: $ ng g s services/employee
+--------------------------------------------------------------------------------
+
+1. Install JSON Server: npm install -g json-server
+
+2. Start JSON Server: json-server --watch db.json
+This commands alraedy creates a db.json file in the root directory with default data.
+--------------------------------------------------------------------------------
+
+
+Tutorial: 35:00
