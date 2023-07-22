@@ -13,7 +13,7 @@ This is a CRUD (Create, Read, Update, Delete) application built with Angular, Ma
     - [Step 6: Testing]()
 - [JSON Server](#json-server)
     - [Step 1: Installation]()
-    - [Getting started]()
+    - [Step 2: Getting started]()
     - [Step 3: RESTful endpoints]()
 - [Contribution](#contribution)
 
