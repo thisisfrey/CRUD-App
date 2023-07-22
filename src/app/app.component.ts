@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     'experience',
     'company',
     'package',
+    'action'
   ];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
