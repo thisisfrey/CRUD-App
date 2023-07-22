@@ -2,6 +2,15 @@
 
 This is a CRUD (Create, Read, Update, Delete) application built with Angular, Material UI, and JSON Server. The app allows users to perform basic CRUD operations on a collection of data stored in a JSON server.
 
+## Overview
+
+- [Angular:](https://angular.io/) Angular is an open-source front-end web application framework by Google. It enables developers to build dynamic, single-page web apps with a component-based architecture, two-way data binding, and dependency injection.
+
+- [Angular Material:](https://material.angular.io/) Angular Material is a UI component library for Angular apps. Developed by Google, it follows Material Design guidelines, providing pre-built and customizable UI elements for creating modern and responsive interfaces.
+
+- [JSON Server:](https://www.npmjs.com/package/json-server) JSON Server is a lightweight Node.js application that creates a mock RESTful API server. It's ideal for front-end developers to prototype and test applications before connecting to a real backend.
+
+
 ## Angular
 
 ### Step 1: Install Angular CLI
