@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { EmployeeService } from '../services/employee.service';
-import { DialogRef } from '@angular/cdk/dialog';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-edit-employee',
@@ -20,7 +20,7 @@ export class AddEditEmployeeComponent {
   constructor(
     private _fb: FormBuilder,
     private _employeeService: EmployeeService,
-    private _dialogRef: DialogRef<AddEditEmployeeComponent>
+    private _dialogRef: MatDialogRef<AddEditEmployeeComponent>
   ) {
     this.employeeForm = this._fb.group({
       firstName: '',
@@ -43,8 +43,8 @@ export class AddEditEmployeeComponent {
           // On success
           // TODO, alert will be replaced with a snackbar
           alert('Employee added successfully!');
-          // Close dialog
-          this._dialogRef.close();
+          // Close dialog, passing true to reload employee list
+          this._dialogRef.close(true);
         },
         error: (err) => {
           console.error(err);
