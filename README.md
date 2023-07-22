@@ -2,6 +2,12 @@
 
 This is a CRUD (Create, Read, Update, Delete) application built with Angular, Material UI, and JSON Server. The app allows users to perform basic CRUD operations on a collection of data stored in a JSON server.
 
+## Table of Contents
+- [Overview](#overview)
+- [Angular](#angular)
+- [JSON Server](#features)
+- [Contribution](#contribution)
+
 ## Overview
 
 - [Angular:](https://angular.io/) Angular is an open-source front-end web application framework by Google. It enables developers to build dynamic, single-page web apps with a component-based architecture, two-way data binding, and dependency injection.
@@ -109,8 +115,10 @@ JSON Server automatically creates RESTful endpoints based on the data in your db
 - PUT http://localhost:3000/employees/1 with a JSON body will update the post with ID 1.
 - DELETE http://localhost:3000/employees/1 will delete the post with ID 1.
 
+## Acknowledgments
+Special thanks to [Tarique Akhtar Ansari](https://github.com/Tariqu) for creating the tutorial [Angular 15 CRUD app using material UI | JSON-server | step by step](https://www.youtube.com/watch?v=4mKY_yDq64g)on which this project is based. The tutorial provided valuable insights into web development using Angular, Material UI, and JSON Server.
 
-
+[Back to Top](#table-of-contents)
 
 
 
