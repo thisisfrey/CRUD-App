@@ -5,7 +5,16 @@ This is a CRUD (Create, Read, Update, Delete) application built with Angular, Ma
 ## Table of Contents
 - [Overview](#overview)
 - [Angular](#angular)
-- [JSON Server](#features)
+    - [Step 1: Install Angular CLI](step-1-install-angular-cli)
+    - [Step 2: Check Angular version]()
+    - [Step 3: Create a new Angular app]()
+    - [Step 4: Start the app]()
+    - [Step 5: Code scaffolding]()
+    - [Step 6: Testing]()
+- [JSON Server](#json-server)
+    - [Step 1: Installation]()
+    - [Getting started]()
+    - [Step 3: RESTful endpoints]()
 - [Contribution](#contribution)
 
 ## Overview
@@ -106,7 +115,7 @@ json-server --watch db.json
 ```
 This creates the [db.json](https://github.com/thisisfrey/CRUD-App/blob/main/db.json) file in the root directory with default data, if it doesn't exist. JSON Server will now be running at http://localhost:3000/. You can access your data through various RESTful endpoints.
 
-### Step 3: Usage: RESTful endpoints
+### Step 3: RESTful endpoints
 JSON Server automatically creates RESTful endpoints based on the data in your db.json file. For example:
 
 - GET http://localhost:3000/employees will retrieve all posts.
