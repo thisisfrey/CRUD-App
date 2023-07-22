@@ -13,18 +13,6 @@
       "id": 1
     },
     {
-      "firstName": "Alice",
-      "lastName": "Frey",
-      "email": "antonia.frey@outlook.com",
-      "dob": "",
-      "gender": "",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
-      "id": 2
-    },
-    {
       "firstName": "Test",
       "lastName": "",
       "email": "",
@@ -47,18 +35,6 @@
       "experience": "",
       "package": 5,
       "id": 4
-    },
-    {
-      "firstName": "Testttt",
-      "lastName": "",
-      "email": "",
-      "dob": "",
-      "gender": "",
-      "education": "",
-      "company": "",
-      "experience": 123,
-      "package": "",
-      "id": 5
     }
   ]
 }

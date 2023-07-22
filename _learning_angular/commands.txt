@@ -34,11 +34,13 @@ JSON Server (starting at 35)
 This commands alraedy creates a db.json file in the root directory with default data.
 --------------------------------------------------------------------------------
 
-Next: Build a table (starting at 34:21)
+Build a table (starting at 34:21)
 
 --------------------------------------------------------------------------------
 
-Tutorial: 43:21
+Tutorial: 1:01
+
+Next: Add functionality for edit & delete
 --------------------------------------------------------------------------------
 
 

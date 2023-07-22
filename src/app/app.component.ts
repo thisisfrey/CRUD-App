@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     'experience',
     'company',
     'package',
-    'action'
+    'action',
   ];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -69,5 +69,17 @@ export class AppComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  deleteEmployee(id: number) {
+    this._employeeService.deleteEmployee(id).subscribe({
+      // TODO: Replace alert with snackbar
+      next: (res) => {
+        console.log(id);
+        alert('Employee deleted!');
+        this.getEmployees()
+      },
+      error: console.error,
+    });
   }
 }
