@@ -22,4 +22,4 @@ https://material.angular.io/components/categories
 7. Generate component
 $ ng g c add-edit-employee 
 
-Tutorial: 16:00
+Tutorial: 28:50
