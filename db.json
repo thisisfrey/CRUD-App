@@ -1,3 +1,28 @@
 {
-  "employees": []
+  "employees": [
+    {
+      "firstName": "Alice",
+      "lastName": "Frey",
+      "email": "antonia.frey@outlook.com",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 1
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "Frey",
+      "email": "antonia.frey@outlook.com",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 2
+    }
+  ]
 }

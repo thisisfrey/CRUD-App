@@ -116,7 +116,7 @@ JSON Server automatically creates RESTful endpoints based on the data in your db
 - DELETE http://localhost:3000/employees/1 will delete the post with ID 1.
 
 ## Acknowledgments
-Special thanks to [Tarique Akhtar Ansari](https://github.com/Tariqu) for creating the tutorial [Angular 15 CRUD app using material UI | JSON-server | step by step](https://www.youtube.com/watch?v=4mKY_yDq64g)on which this project is based. The tutorial provided valuable insights into web development using Angular, Material UI, and JSON Server.
+Special thanks to [Tarique Akhtar Ansari](https://github.com/Tariqu) for creating the tutorial [Angular 15 CRUD app using material UI | JSON-server | step by step](https://www.youtube.com/watch?v=4mKY_yDq64g) on which this project is based. The tutorial provided valuable insights into web development using Angular, Material UI, and JSON Server.
 
 [Back to Top](#table-of-contents)
 
