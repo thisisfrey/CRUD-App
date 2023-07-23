@@ -90,7 +90,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  openEditEmployeeForm(data: any) {
+  openEditEmployeeForm(data: IEmployee) {
     const dialogRef = this._dialog.open(AddEditEmployeeComponent, { data });
     // Adding reference to refresh list after closing
     // Refresh list when val is true from this._dialogRef.close(true);
