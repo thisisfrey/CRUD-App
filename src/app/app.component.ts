@@ -49,8 +49,6 @@ export class AppComponent implements OnInit {
     const dialogRef = this._dialog.open(AddEditEmployeeComponent);
     dialogRef.afterClosed().subscribe({
       next: (val) => {
-        // Refresh list when val is true from this._dialogRef.close(true);
-        console.log("Is this called?")
         if (val) {
           this.getEmployees();
         }
@@ -93,6 +91,15 @@ export class AppComponent implements OnInit {
   }
 
   openEditEmployeeForm(data: any) {
-    this._dialog.open(AddEditEmployeeComponent, { data });
+    const dialogRef = this._dialog.open(AddEditEmployeeComponent, { data });
+    // Adding reference to refresh list after closing
+    // Refresh list when val is true from this._dialogRef.close(true);
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.getEmployees();
+        }
+      },
+    });
   }
 }
