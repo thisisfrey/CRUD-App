@@ -8,6 +8,7 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CoreService } from './core/core.service';
 
 @Component({
   selector: 'app-root',
@@ -37,7 +38,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private _dialog: MatDialog,
-    private _employeeService: EmployeeService
+    private _employeeService: EmployeeService,
+    private _coreService: CoreService
   ) {}
 
   // AppComponent implements OnInit => ngOnInit()
@@ -80,10 +82,8 @@ export class AppComponent implements OnInit {
 
   deleteEmployee(id: number) {
     this._employeeService.deleteEmployee(id).subscribe({
-      // TODO: Replace alert with snackbar
       next: (res) => {
-        console.log(id);
-        alert('Employee deleted!');
+        this._coreService.openSnackBar('Employee deleted!', 'OK');
         this.getEmployees();
       },
       error: console.error,

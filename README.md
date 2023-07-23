@@ -6,6 +6,7 @@ This is a CRUD (Create, Read, Update, Delete) application built with Angular, Ma
 - [Overview](#overview)
 - [Angular](#angular)
 - [JSON Server](#json-server)
+- [IntelliSense](#intellisense)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -114,6 +115,11 @@ JSON Server automatically creates RESTful endpoints based on the data in your db
 - POST http://localhost:3000/employees with a JSON body will create a new post.
 - PUT http://localhost:3000/employees/1 with a JSON body will update the post with ID 1.
 - DELETE http://localhost:3000/employees/1 will delete the post with ID 1.
+
+## IntelliSense
+VS Code IntelliSense features are powered by a language service. A language service provides intelligent code completions based on language semantics and an analysis of your source code. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. If you continue typing characters, the list of members (variables, methods, etc.) is filtered to only include members containing your typed characters. Pressing Tab or Enter will insert the selected member.
+
+You can trigger IntelliSense by typing <kbd>Ctrl</kbd> + <kbd>Space</kbd>.
 
 ## Acknowledgments
 Special thanks to [Tarique Akhtar Ansari](https://github.com/Tariqu) for creating the tutorial [Angular 15 CRUD app using material UI | JSON-server | step by step](https://www.youtube.com/watch?v=4mKY_yDq64g) on which this project is based. The tutorial provided valuable insights into web development using Angular, Material UI, and JSON Server.

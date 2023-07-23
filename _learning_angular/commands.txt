@@ -38,9 +38,9 @@ Build a table (starting at 34:21)
 
 --------------------------------------------------------------------------------
 
-Tutorial: 1:10
+Tutorial: 1:20
 
-Next: Add functionality for edit employee
+Next: Snackbar for alert!
 --------------------------------------------------------------------------------
 
 

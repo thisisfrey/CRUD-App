@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { EmployeeService } from '../services/employee.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { CoreService } from '../core/core.service';
 
 @Component({
   selector: 'app-add-edit-employee',
@@ -23,7 +24,10 @@ export class AddEditEmployeeComponent implements OnInit {
     private _dialogRef: MatDialogRef<AddEditEmployeeComponent>,
     // Injecting (row) data when editing employee
     // employee_data has to be public to make data accessible in html
-    @Inject(MAT_DIALOG_DATA) public employee_data: any
+    @Inject(MAT_DIALOG_DATA) public employee_data: any,
+    // Inject core service to use snackbar
+    // ? @Inject to pass data?
+    private _coreService: CoreService
   ) {
     this.employeeForm = this._fb.group({
       firstName: '',
@@ -48,27 +52,23 @@ export class AddEditEmployeeComponent implements OnInit {
     if (this.employeeForm.valid) {
       if (this.employee_data) {
         // CASE: UPDATE (EDIT) EMPLOYEE
-        this._employeeService.updateEmployee(this.employee_data.id, this.employeeForm.value).subscribe({
-          next: (val: any) => {
-            alert('Employee updated!');
-            // TODO: Not working here !!!
-            this._dialogRef.close(true);
-          },
-          error: (err) => {
-            console.error(err);
-          },
-        });
-
+        this._employeeService
+          .updateEmployee(this.employee_data.id, this.employeeForm.value)
+          .subscribe({
+            next: (val: any) => {
+              this._coreService.openSnackBar('Updated employee');
+              this._dialogRef.close(true);
+            },
+            error: (err) => {
+              console.error(err);
+            },
+          });
       } else {
         // CASE: NEW EMPLOYEE
         // Api call to json server through service EmployeeService
         this._employeeService.addEmployee(this.employeeForm.value).subscribe({
           next: (val: any) => {
-            // On success
-            // TODO, alert will be replaced with a snackbar
-            alert('Employee added successfully!');
-            // Close dialog, passing true to refresh employee list in app.component
-            // TODO: Not working?
+            this._coreService.openSnackBar('Created employee');
             this._dialogRef.close(true);
           },
           error: (err) => {
