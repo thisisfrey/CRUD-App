@@ -38,9 +38,9 @@ Build a table (starting at 34:21)
 
 --------------------------------------------------------------------------------
 
-Tutorial: 1:01
+Tutorial: 1:10
 
-Next: Add functionality for edit & delete
+Next: Add functionality for edit employee
 --------------------------------------------------------------------------------
 
 

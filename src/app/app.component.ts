@@ -50,12 +50,12 @@ export class AppComponent implements OnInit {
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         // Refresh list when val is true from this._dialogRef.close(true);
+        console.log("Is this called?")
         if (val) {
           this.getEmployees();
         }
-      }
-    }
-    )
+      },
+    });
   }
 
   getEmployees() {
@@ -86,9 +86,13 @@ export class AppComponent implements OnInit {
       next: (res) => {
         console.log(id);
         alert('Employee deleted!');
-        this.getEmployees()
+        this.getEmployees();
       },
       error: console.error,
     });
+  }
+
+  openEditEmployeeForm(data: any) {
+    this._dialog.open(AddEditEmployeeComponent, { data });
   }
 }
