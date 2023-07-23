@@ -8,7 +8,7 @@
   </button>
   <span>CRUD App</span>
   <span class="example-spacer"></span>
-  <button mat-raised-button (click)="openAddEditEmployeeForm()">
+  <button mat-raised-button (click)="openAddNewEmployeeForm()">
     ADD EMPLOYEE
   </button>
 </mat-toolbar>
@@ -95,7 +95,11 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
         <td mat-cell *matCellDef="let row">
           <!-- Pass data in row with openEditEmployeeForm(row) -->
-          <button mat-icon-button color="primary" (click)="openEditEmployeeForm(row)">
+          <button
+            mat-icon-button
+            color="primary"
+            (click)="openEditEmployeeForm(row)"
+          >
             <mat-icon>edit</mat-icon>
           </button>
           <button mat-icon-button color="warn" (click)="deleteEmployee(row.id)">

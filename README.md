@@ -121,6 +121,11 @@ VS Code IntelliSense features are powered by a language service. A language serv
 
 You can trigger IntelliSense by typing <kbd>Ctrl</kbd> + <kbd>Space</kbd>.
 
+## Preview
+![app](./preview/app.JPG)
+![dialog](./preview/dialog.JPG)
+
+
 ## Acknowledgments
 Special thanks to [Tarique Akhtar Ansari](https://github.com/Tariqu) for creating the tutorial [Angular 15 CRUD app using material UI | JSON-server | step by step](https://www.youtube.com/watch?v=4mKY_yDq64g) on which this project is based. The tutorial provided valuable insights into web development using Angular, Material UI, and JSON Server.
 
