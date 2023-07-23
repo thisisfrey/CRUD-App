@@ -21,10 +21,10 @@ export class EmployeeService {
   }
 
   deleteEmployee(id: number): Observable<any> {
-    return this._http.delete(`{${SERVER_URL}/employees/${id}`);
+    return this._http.delete(`${SERVER_URL}/employees/${id}`);
   }
 
   updateEmployee(id: number, data: IEmployee): Observable<any> {
-    return this._http.put(`{${SERVER_URL}/employees/${id}`, data);
+    return this._http.put(`${SERVER_URL}/employees/${id}`, data);
   }
 }

@@ -20,10 +20,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ConfirmDeleteEmployeeDialogComponent } from './confirm-delete-employee-dialog/confirm-delete-employee-dialog.component';
 
 
 @NgModule({
-  declarations: [AppComponent, AddEditEmployeeComponent],
+  declarations: [AppComponent, AddEditEmployeeComponent, ConfirmDeleteEmployeeDialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

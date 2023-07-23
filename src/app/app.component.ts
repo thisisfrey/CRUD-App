@@ -3,12 +3,11 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddEditEmployeeComponent } from './add-edit-employee/add-edit-employee.component';
 import { EmployeeService } from './services/employee.service';
 import { ViewChild } from '@angular/core';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { MatSort, MatSortModule } from '@angular/material/sort';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 import { CoreService } from './core/core.service';
+import { ConfirmDeleteEmployeeDialogComponent } from './confirm-delete-employee-dialog/confirm-delete-employee-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -53,6 +52,18 @@ export class AppComponent implements OnInit {
       next: (val) => {
         if (val) {
           this.getEmployees();
+        }
+      },
+    });
+  }
+
+  openConfirmDeleteEmployeeDialog(id: number) {
+    const dialogRef = this._dialog.open(ConfirmDeleteEmployeeDialogComponent);
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.deleteEmployee(id);
+          // afterwards: this.getEmployees();
         }
       },
     });
