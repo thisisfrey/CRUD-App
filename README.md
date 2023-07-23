@@ -142,11 +142,15 @@ You can trigger IntelliSense by typing <kbd>Ctrl</kbd> + <kbd>Space</kbd>.
 ## Future Planned Features
 Below are the planned features intended for implementation in the near future:
 
-1. Confirm Dialog for Employee Entry Deletion
+1. **Confirm Dialog for Employee Entry Deletion:**
    The app prioritizes data safety and user experience. To prevent accidental data deletion, a confirm dialog will be introduced when users attempt to delete an entry from the database. This additional step aims to provide a clear warning and request confirmation before any irreversible actions are taken, ensuring users have greater control over their data.
 
-2. Extended Search Functionality
+2. **Extended Search Functionality:**
    Search functionality is vital for a seamless user experience. In upcoming releases, the app aims to enhance its search features. The extended search option will enable users to apply advanced filters, making it easier and quicker to find specific content. Users will have more precise control over their search results, whether it's by date range, category, or other custom criteria.
+
+3. **Add CI/CD Pipeline:** On Gitlab (TBD)
+
+4. **Deployment:** On Gh Pages (TBD)
 
 ## Acknowledgments
 
